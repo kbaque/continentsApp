@@ -45,7 +45,7 @@ Italy = Country.create!(name: 'Italy', capital: 'Rome', photo: 'https://www.aski
 United_Kingdom = Country.create!(name: 'United Kingdom', capital: 'London',photo: 'https://s-media-cache-ak0.pinimg.com/736x/a0/c5/ba/a0c5ba650b5f91c7dd787065acc89302--pictures-of-london-blue-pictures.jpg', continent: Europe)
 Germany = Country.create!(name: 'Germany', capital: 'Berlin', photo: 'http://www.telegraph.co.uk/content/dam/Travel/Destinations/Europe/Germany/Berlin/Berlin-overview-cityscape-xlarge.jpg', continent: Europe)
 #Australia 
-Australia = Country.create!(name: 'Australia', capital: 'Canberra', photo: 'https://s-media-cache-ak0.pinimg.com/736x/54/71/d4/5471d478338c8d79194ef9b9be253e96--visit-australia-globetrotter.jpg', continent: Australia)
+_Australia = Country.create!(name: 'Australia', capital: 'Canberra', photo: 'https://s-media-cache-ak0.pinimg.com/736x/54/71/d4/5471d478338c8d79194ef9b9be253e96--visit-australia-globetrotter.jpg', continent: Australia)
 New_Zealand = Country.create!(name: 'New Zealand', capital: 'Wellington', photo: 'https://www.wellingtonnz.com/assets/Uploads/images/_resampled/FillWyIxMTM2IiwiNjY1Il0/wellington-sunrise-over-the-city.jpg' , continent: Australia)
 Papua_New_Guinea = Country.create!(name: 'Papua New Guinea', capital: 'Port Moresby', photo: 'https://s-media-cache-ak0.pinimg.com/originals/1d/d5/e3/1dd5e36821885ed42aff6554e2cc2f6d.jpg', continent: Australia)
 #Antartica
