@@ -1,7 +1,7 @@
 <center>
 <h1> Top visited  Countries in <%= @continent.name %> </h1>
 
-
+<div class="show-page">
 
 <% @countries.each do |country| %>
 
@@ -30,9 +30,10 @@
 <%= f.submit "Add country to wishlist " %>
 <%= link_to 'Delete', @continent, method: :delete %>
 
-
-
-<% end %>
+<p><%= link_to "Back to Home", continents_path %></p>
 
 <% end %>
+
+<% end %>
+</div>
 </center>

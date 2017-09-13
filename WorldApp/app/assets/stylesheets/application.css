@@ -1,7 +1,10 @@
+body {
+    background-color:lightblue;
+}
+
 .show-page{
     height: 100vh;
-    background-color: lightblue;
-   
+    /* background-color:lightblue; */
 }
 .photos{
     width:500px;
@@ -11,11 +14,14 @@
 .home{
     height: 100vh;
     background: url("https://wallpapercave.com/wp/M0LQ3nk.jpg");
-
+    color: white;
 }
 .main-div{
    padding-top: 2px;
    padding-left: 650px;
+   color: white;
+   line-height: 0;
+   font-size: 30px;
 }
 /* h1{
    font-size: 40px;
@@ -24,11 +30,11 @@
 } */
 h4{
     font-size: 30px;
-    color:black;
-
+    color: white;
+    padding-top: 10px;
 }
 ul{
-    font-size: 30px;
+    font-size: 25px;
     color: white;
     list-style-type: none;
     padding-left: 650px;
@@ -36,6 +42,9 @@ ul{
 }
 li {
     text-decoration-style:  none;
+    color: white;
+}
+a:link{
     color: white;
 }
 
