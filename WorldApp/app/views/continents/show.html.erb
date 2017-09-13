@@ -1,12 +1,38 @@
+<center>
 <h1> Top visited  Countries in <%= @continent.name %> </h1>
 
+
+
 <% @countries.each do |country| %>
-<h3> <%= country.name %> </h3>
+
+    <h3> <%= country.name %> </h3>
+    <h5> Capital: <%= country.capital %> </h5>
+
+    <%= image_tag country.photo, class:"photos" %>
 
 
-<h5> Capital: <%= country.capital %> </h5>
-<div class="pictures">
-    <%= image_tag country.photo %>
-</div>
+<center>
+<%= form_for :country, method: 'patch', url: {action: 'update'} do |f| %>
+    <%= label(:country, :name) %>
+    <%= f.text_field :name%><br>
+    <%= label(:country, :capital)%>
+    <%= f.text_field :capital %><br>
+    <%= f.submit "Save Edits"%>
+<% end %>
+
+
+<center>
+<%= form_for :country, method: 'post', url: {action: 'create'} do |f|  %>
+    <%= label(:country, :name)%>
+    <%= f.text_field :name %><br>
+    <%= label(:country, :capital)%> 
+    <%= f.text_field :capital%> 
+<%= f.submit "Add country to wishlist " %>
+<%= link_to 'Delete', @continent, method: :delete %>
+
+
 
 <% end %>
+
+<% end %>
+</center>

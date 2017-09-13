@@ -1,9 +1,19 @@
+<div class="home">
+<center>
 <h1> Continents 🌍 </h1>
 <h4> A travelers Guide 🎒</h4>
+</center>
 
+<center>
 <ul>
     <% @continents.each do |continent| %>
+   
    <li>  <%= link_to continent.name, continent_path(continent) %> </li>
     
 <% end %>
+</center>
 </ul>
+</div>
+
+
+
